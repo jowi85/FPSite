@@ -8,6 +8,11 @@ app.get('/',function(req,res){
     //__dirname : It will resolve to your project folder.
 });
 
+app.get('/bulma.css',function(req,res) {
+    res.sendFile('/home/ec2-user/Projects/FPSite/css/bulma.css')
+});
+
+
 app.listen(3000);
 
 console.log("Running at Port 3000");
