@@ -8,6 +8,6 @@ app.get('/',function(req,res){
     //__dirname : It will resolve to your project folder.
 });
 
-app.listen(80);
+app.listen(3000);
 
-console.log("Running at Port 80");
+console.log("Running at Port 3000");
