@@ -4,7 +4,7 @@ var path    = require("path");
 
 
 app.get('/',function(req,res){
-    res.sendFile('/home/ec2-user/Projects/FPSite/pages/bulma.html');
+    res.sendFile('/home/ec2-user/Projects/FPSite/pages/main.html');
     //__dirname : It will resolve to your project folder.
 });
 
