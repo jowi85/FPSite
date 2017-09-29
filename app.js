@@ -11,14 +11,25 @@ if (process.env.ENVIRONMENT === 'dev') {
 }
 
 app.get('/',function(req,res){
-    res.sendFile(directory + '/Projects/FPSite/pages/main.html');
+    res.sendFile(directory + '/Projects/FPSite/pages/login.html');
     //__dirname : It will resolve to your project folder.
+});
+
+app.get('/main',function(req,res){
+    res.sendFile(directory + '/Projects/FPSite/pages/main.html')
 });
 
 app.get('/bulma.css',function(req,res) {
     res.sendFile(directory + '/Projects/FPSite/css/bulma.css')
 });
 
+app.get('/images/fpShort',function(req,res){
+    res.sendFile(directory + '/Projects/FPSite/images/fpShort.png');
+});
+
+app.get('/images/fpLong',function(req,res){
+    res.sendFile(directory + '/Projects/FPSite/images/fpLong.png');
+});
 
 app.listen(3000);
 
