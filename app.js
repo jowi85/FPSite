@@ -31,6 +31,14 @@ app.get('/images/fpLong',function(req,res){
     res.sendFile(directory + '/Projects/FPSite/images/fpLong.png');
 });
 
+app.get('/images/fb',function(req,res){
+    res.sendFile(directory + '/Projects/FPSite/images/fb.png');
+});
+
+app.get('/images/discord',function(req,res){
+    res.sendFile(directory + '/Projects/FPSite/images/discord.svg');
+});
+
 app.listen(3000);
 
 console.log("Running at Port 3000");
