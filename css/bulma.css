@@ -108,7 +108,7 @@ th {
 }
 
 html {
-    background-color: #3a3a3a;
+    background-color: #001F3B;
     font-size: 16px;
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
@@ -4207,22 +4207,22 @@ a.box:active {
 }
 
 .notification.is-info {
-    background-color: #3273dc;
+    background-color: #004085;
     color: #fff;
 }
 
 .notification.is-success {
-    background-color: #23d160;
+    background-color: #0056B2;
     color: #fff;
 }
 
 .notification.is-warning {
-    background-color: #ffdd57;
-    color: rgba(0, 0, 0, 0.7);
+    background-color: #007BFF;
+    color: #fff;
 }
 
 .notification.is-danger {
-    background-color: #ff3860;
+    background-color: #4CA3FF;
     color: #fff;
 }
 
