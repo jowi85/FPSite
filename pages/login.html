@@ -20,43 +20,56 @@
         </div>
     </div>
 
-    <div class="columns">
-        <div class="column is-offset-4 is-4">
-            <div class="field">
-                <label class="label is-small" style="color:#4CA3FF">Email</label>
-                <div class="control">
-                    <input class="input is-small" type="text" placeholder="alexsmith@gmail.com">
-                </div>
-                <label class="label is-small" style="color:#4CA3FF; padding-top:7px">Password</label>
-                <div class="control">
-                    <input class="input is-small" type="email" placeholder="password">
+    <form id="login">
+        <div class="columns">
+            <div class="column is-offset-4 is-4">
+                <div class="field">
+                    <div class="control has-icon has-icon-right">
+                        <input class="input is-small" type="text" placeholder="alexsmith@gmail.com">
+                        <span class="icon user">
+                            <i class="fa fa-user"></i>
+                        </span>
+                    </div>
+                    <div class="control has-icon has-icon-right">
+                        <input class="input is-small" type="password" placeholder="password" style="margin-top:15px">
+                        <span class="icon user" style="margin-top:15px">
+                            <i class="fa fa-lock"></i>
+                        </span>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <nav class="level">
-        <nav class="level-item has-text-centered">
-            <div class="field is-grouped">
-                <p class="control">
-                    <a class="button is-primary is-small has-text-centered" href="main" style="background-color:#4CA3FF">Login</a>
-                </p>
-                <p class="control">
-                    <a class="button is-danger is-small is-outlined has-text-centered">Cancel</a>
-                </p>
-            </div>
+        <nav class="level">
+            <nav class="level-item has-text-centered">
+                <div class="field is-grouped">
+                    <p class="control login">
+                        <a class="button is-primary is-small has-text-centered" href="main" style="background-color:#4CA3FF">Login</a>
+                    </p>
+                    <p class="control reset">
+                        <button onclick="clearForm()" class="button is-danger is-small is-outlined has-text-centered">
+                            Clear
+                        </button>
+                    </p>
+                </div>
+            </nav>
         </nav>
-    </nav>
 
-    <div class="container" align="center" style="padding-top:12px">
-            <p>
-                <figure class="image is-96x96">
-                    <img src="/images/fpShort">
-                </figure>
-            </p>
-    </div>
+        <div class="container" align="center" style="padding-top:12px">
+                <p>
+                    <figure class="image is-64x64">
+                        <img src="/images/fpShort">
+                    </figure>
+                </p>
+        </div>
+    </form>
 
 </section>
+
+<script>
+    function clearForm() {document.getElementById('login').reset();}
+</script>
+
 </body>
 </html>
 
