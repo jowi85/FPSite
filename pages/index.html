@@ -7,7 +7,6 @@
     <title>Forgotten Prophets</title>
     <link rel="stylesheet" type="text/css" href="/css/bulma.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <!--<script src="/testclass.js"></script>-->
 </head>
 
 <body>
@@ -19,13 +18,12 @@
         </div>
     </div>
 
-    <form id="login" method="post" action="/main">
-        <div class="columns is-centered">
-            <div class="column is-3">
-
+    <div class="columns is-centered">
+        <div class="column is-3">
+            <form id="login" method="post" action="/main">
                 <div class="field">
                     <div class="control has-icon has-icon-left">
-                        <input class="input" type="text" placeholder="alexsmith@gmail.com">
+                        <input name="user" class="input" type="text" placeholder="alexsmith@gmail.com">
                         <span class="icon user">
                             <i class="fa fa-envelope"></i>
                         </span>
@@ -33,29 +31,65 @@
                 </div>
                 <div class="field">
                     <div class="control has-icon has-icon-left">
-                        <input class="input" type="password" placeholder="password">
+                        <input name="password" class="input" type="password" placeholder="password">
                         <span class="icon user">
                             <i class="fa fa-lock"></i>
                         </span>
                     </div>
                 </div>
-            </div>
+                <div class="field">
+                    <div class="control" style="text-align: center">
+                        <button class="button is-info" type="submit" style="margin-left: 12px; margin-right: 20px">
+                            Login
+                        </button>
+                        <a id=signup-modal class="button is-warning modal-button" data-target="signup-modal">
+                            Sign Up
+                        </a>
+                    </div>
+                </div>
+            </form>
         </div>
+    </div>
 
-        <div class="field">
-            <div class="control" style="text-align: center">
-                <button class="button is-info" type="submit" style="margin-left: 12px; margin-right: 20px">
-                    Login
-                </button>
-                <button class="button is-warning is-outlined" type="submit">
-                    Sign Up
-                </button>
-            </div>
+    <!--This section defines the sign up modal-->
+    <div class="modal">
+        <div class="modal-background">
+            <!--empty-->
         </div>
-    </form>
-
-
-
+        <div class="modal-content">
+            <form id="register" method="get" action="/">
+                <div class="columns is-centered">
+                    <div class="column is-5">
+                        <div class="field">
+                            <div class="control has-icon has-icon-left">
+                                <input name="registeruser" class="input" type="text" placeholder="alexsmith@gmail.com">
+                                <span class="icon user">
+                                    <i class="fa fa-envelope"></i>
+                                 </span>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <div class="control has-icon has-icon-left">
+                                <input name="registerpassword" class="input" type="password" placeholder="password">
+                                <span class="icon user">
+                                    <i class="fa fa-lock"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <div class="control" style="text-align: center">
+                                <button class="button is-info" type="submit" style="margin-left: 12px; margin-right: 20px">
+                                    Register
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <button class="modal-close is-large" aria-label="close"></button>
+    </div>
+    <!--This ends the sign up modal-->
 </section>
 
 <footer class="footer" style="background-color:#001f3B">
@@ -67,6 +101,22 @@
         </nav>
     </nav>
 </footer>
+
+<!--This defines the onclick behavior for the modal-->
+<script type="text/javascript">
+    //open modal
+    document.querySelector('a#signup-modal').addEventListener('click', function(event) {
+        event.preventDefault();
+        document.querySelector('.modal').classList.add('is-active');
+        document.querySelector('html').classList.add('is-clipped');
+    });
+    //close modal
+    document.querySelector('.modal-close').addEventListener('click', function(event) {
+        event.preventDefault();
+        document.querySelector('.modal').classList.remove('is-active');
+        document.querySelector('html').classList.remove('is-clipped');
+    });
+</script>
 
 </body>
 </html>
