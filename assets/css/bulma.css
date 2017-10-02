@@ -1854,13 +1854,13 @@ a.box:active {
 }
 
 .button.is-info {
-    background-color: #3273dc;
+    background-color: #4CA3FF;
     border-color: transparent;
     color: #fff;
 }
 
 .button.is-info:hover, .button.is-info.is-hovered {
-    background-color: #276cda;
+    background-color: #007CFF;
     border-color: transparent;
     color: #fff;
 }
@@ -1876,13 +1876,13 @@ a.box:active {
 }
 
 .button.is-info:active, .button.is-info.is-active {
-    background-color: #2366d1;
+    background-color: #4CA3FF;
     border-color: transparent;
     color: #fff;
 }
 
 .button.is-info[disabled] {
-    background-color: #3273dc;
+    background-color: #4CA3FF;
     border-color: transparent;
     -webkit-box-shadow: none;
     box-shadow: none;
@@ -1890,7 +1890,7 @@ a.box:active {
 
 .button.is-info.is-inverted {
     background-color: #fff;
-    color: #3273dc;
+    color: #4CA3FF;
 }
 
 .button.is-info.is-inverted:hover {
@@ -1902,7 +1902,7 @@ a.box:active {
     border-color: transparent;
     -webkit-box-shadow: none;
     box-shadow: none;
-    color: #3273dc;
+    color: #4CA3FF;
 }
 
 .button.is-info.is-loading:after {
@@ -1911,26 +1911,26 @@ a.box:active {
 
 .button.is-info.is-outlined {
     background-color: transparent;
-    border-color: #3273dc;
-    color: #3273dc;
+    border-color: #4CA3FF;
+    color: #4CA3FF;
 }
 
 .button.is-info.is-outlined:hover, .button.is-info.is-outlined:focus {
-    background-color: #3273dc;
-    border-color: #3273dc;
+    background-color: #4CA3FF;
+    border-color: #4CA3FF;
     color: #fff;
 }
 
 .button.is-info.is-outlined.is-loading:after {
-    border-color: transparent transparent #3273dc #3273dc !important;
+    border-color: transparent transparent #4CA3FF #4CA3FF !important;
 }
 
 .button.is-info.is-outlined[disabled] {
     background-color: transparent;
-    border-color: #3273dc;
+    border-color: #4CA3FF;
     -webkit-box-shadow: none;
     box-shadow: none;
-    color: #3273dc;
+    color: #4CA3FF;
 }
 
 .button.is-info.is-inverted.is-outlined {
@@ -1941,7 +1941,7 @@ a.box:active {
 
 .button.is-info.is-inverted.is-outlined:hover, .button.is-info.is-inverted.is-outlined:focus {
     background-color: #fff;
-    color: #3273dc;
+    color: #4CA3FF;
 }
 
 .button.is-info.is-inverted.is-outlined[disabled] {
@@ -2052,13 +2052,13 @@ a.box:active {
 }
 
 .button.is-warning {
-    background-color: #ffdd57;
+    background-color: #ffa100;
     border-color: transparent;
     color: rgba(0, 0, 0, 0.7);
 }
 
 .button.is-warning:hover, .button.is-warning.is-hovered {
-    background-color: #ffdb4a;
+    background-color: #E87B0C;
     border-color: transparent;
     color: rgba(0, 0, 0, 0.7);
 }
@@ -2074,13 +2074,13 @@ a.box:active {
 }
 
 .button.is-warning:active, .button.is-warning.is-active {
-    background-color: #ffd83d;
+    background-color: #E87B0C;
     border-color: transparent;
     color: rgba(0, 0, 0, 0.7);
 }
 
 .button.is-warning[disabled] {
-    background-color: #ffdd57;
+    background-color: #ffa100;
     border-color: transparent;
     -webkit-box-shadow: none;
     box-shadow: none;
@@ -2088,7 +2088,7 @@ a.box:active {
 
 .button.is-warning.is-inverted {
     background-color: rgba(0, 0, 0, 0.7);
-    color: #ffdd57;
+    color: #ffa100;
 }
 
 .button.is-warning.is-inverted:hover {
@@ -2100,7 +2100,7 @@ a.box:active {
     border-color: transparent;
     -webkit-box-shadow: none;
     box-shadow: none;
-    color: #ffdd57;
+    color: #ffa100;
 }
 
 .button.is-warning.is-loading:after {
@@ -2109,26 +2109,26 @@ a.box:active {
 
 .button.is-warning.is-outlined {
     background-color: transparent;
-    border-color: #ffdd57;
-    color: #ffdd57;
+    border-color: #ffa100;
+    color: #ffa100;
 }
 
 .button.is-warning.is-outlined:hover, .button.is-warning.is-outlined:focus {
-    background-color: #ffdd57;
-    border-color: #ffdd57;
+    background-color: #ffa100;
+    border-color: #ffa100;
     color: rgba(0, 0, 0, 0.7);
 }
 
 .button.is-warning.is-outlined.is-loading:after {
-    border-color: transparent transparent #ffdd57 #ffdd57 !important;
+    border-color: transparent transparent #ffa100 #ffa100 !important;
 }
 
 .button.is-warning.is-outlined[disabled] {
     background-color: transparent;
-    border-color: #ffdd57;
+    border-color: #ffa100;
     -webkit-box-shadow: none;
     box-shadow: none;
-    color: #ffdd57;
+    color: #ffa100;
 }
 
 .button.is-warning.is-inverted.is-outlined {
@@ -2139,7 +2139,7 @@ a.box:active {
 
 .button.is-warning.is-inverted.is-outlined:hover, .button.is-warning.is-inverted.is-outlined:focus {
     background-color: rgba(0, 0, 0, 0.7);
-    color: #ffdd57;
+    color: #ffa100;
 }
 
 .button.is-warning.is-inverted.is-outlined[disabled] {
